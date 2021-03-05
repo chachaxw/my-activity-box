@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v1
       - uses: JasonEtco/activity-box@master
         env:
-          GH_PAT: 
-          GITHUB_TOKEN: 53bd2748682e915f1f47c1c889340f7753a25f18
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USERNAME: chachaxw
           GIST_ID: 41dfceba4bd88813ef1748ce14b39123
